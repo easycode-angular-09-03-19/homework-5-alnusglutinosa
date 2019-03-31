@@ -1,0 +1,18 @@
+.alert-msg {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    display: none;
+    transition: opacity 0.3s ease-in;
+}
+.alert-msg__text {
+    width: 100%;
+}
+.alert-msg.is-active {
+    opacity: 1;
+    display: block;
+}

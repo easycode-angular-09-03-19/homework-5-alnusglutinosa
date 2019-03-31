@@ -1,0 +1,16 @@
+<div class="card mb-3">
+  <div class="card-body">
+    <h5 class="card-title">User id: {{ item.id }}</h5>
+    <p class="card-text">Title: {{ item.title }}</p>
+    <button (click)="onEditItem(item)" class="btn btn-primary">
+      {{ isEdit ? "Cansel" : "Edit" }}
+    </button>
+    <button
+      [disabled]="isEdit"
+      (click)="onDeleteItem(item.id)"
+      class="btn btn-warning ml-2"
+    >
+      Delete
+    </button>
+  </div>
+</div>
